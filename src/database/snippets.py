@@ -29,5 +29,3 @@ def get_manga():
         manga_list.append(doc.to_dict())
 
     return jsonify(manga_list)
-
-app.run(port=5000)
