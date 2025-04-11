@@ -10,7 +10,7 @@ function AddManga() {
     });
 
     const addMangaToDb = (mangaData) => {
-        fetch('http://localhost:5000/set-manga', {
+        fetch('https://e-commerce-manga.onrender.com/set-manga', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

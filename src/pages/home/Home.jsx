@@ -9,7 +9,7 @@ function Home() {
 
     const consultarDb = async () => {
         try {
-            const res = await fetch("http://localhost:5000/get-manga");
+            const res = await fetch("https://e-commerce-manga.onrender.com/get-manga");
             const data = await res.json();
             setMangas(data);
             console.log("Dados recebidos:", data);
