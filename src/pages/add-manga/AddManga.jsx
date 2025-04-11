@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AddManga() {
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         titulo: '',
         imagem: '',
@@ -27,6 +30,7 @@ function AddManga() {
     const handleSubmit = (e) => {
         e.preventDefault();
         addMangaToDb(formData);
+        navigate('/');
     };
 
     return (
